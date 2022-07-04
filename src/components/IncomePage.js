@@ -41,7 +41,7 @@ function IncomePage() {
 
     return (
         <Container>
-            <h2>Nova Entrada</h2>
+            <h2>Nova entrada</h2>
             <Form onSubmit={newIncome}>
                 <input
                     type="number"
