@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+
+
   *{
     box-sizing: border-box;
   }
@@ -12,52 +14,51 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Raleway', sans-serif;
     overflow: hidden;
   }
- 
+
   h1 {
-    font-family: 'Saira Stencil One', cursive;
-    font-size: 32px;
-    font-weight: 400;
-    color:#FFFFFF;
     margin-bottom: 28px;
+    font-family: 'Saira Stencil One', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    color:#FFFFFF;
   }
-  
+
   input {
-      background-color:#FFFFFF;
-      width:100%;
-      height:58px;
-      color: #000000;
-      text-decoration:none;
-      border: none;
-      border-radius: 5px;
-      margin-bottom: 13px;
-      font-family: 'Raleway', sans-serif;
-      font-size: 20px;
-      font-weight: 400;
-      padding: 16px;
+    width:100%;
+    height:58px;
+    margin-bottom: 13px;
+    padding: 16px;
+    background-color:#FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
   }
 
   a {
-    color:#FFFFFF;
     margin-top: 34px;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
     font-weight: 700;
+    font-size: 15px;
+    color:#FFFFFF;
     text-decoration: none;
   }
 
   button {
-      background-color:#A328D6;
-      width:100%;
-      height:46px;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 5px;
-      font-family: 'Raleway', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      padding: 12px;
-      cursor:pointer;
+    width:100%;
+    height:46px;
+    padding: 12px;
+    background-color:#A328D6;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
   }
-`;
+`
 
 export default GlobalStyle;

@@ -24,7 +24,6 @@ function LoginPage() {
     }
 
     function toBalance(data) {
-        console.log(data);
         setUser(data);
         navigate("/balance")
     }
@@ -63,20 +62,20 @@ function LoginPage() {
 }
 
 const Container = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-font-family: "Raleway", sans-serif;
-height: 100vh;
+    height: 100vh;
+    font-family: "Raleway", sans-serif;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `
 
 const Form = styled.form`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 `
 
 export default LoginPage;
