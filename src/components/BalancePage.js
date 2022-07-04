@@ -7,10 +7,12 @@ import styled from "styled-components";
 import UserContext from "../context/UserContext";
 
 function BalancePage() {
-    const navigate = useNavigate();
     const { user } = useContext(UserContext);
-    const { name, token } = user;
+
     const [transactions, setTransactions] = useState([]);
+    const navigate = useNavigate();
+    
+    const { name, token } = user;
 
     useEffect(() => {
         const config = {
@@ -98,13 +100,13 @@ function BalancePage() {
                     <i>
                         <IoAddCircleOutline />
                     </i>
-                    <span>Nova Entrada</span>
+                    <span>Nova entrada</span>
                 </Link>
                 <Link to="/expenditure">
                     <i>
                         <IoRemoveCircleOutline />
                     </i>
-                    <span>Nova Entrada</span>
+                    <span>Nova saída</span>
                 </Link>
             </NewTransaction>
         </Container>

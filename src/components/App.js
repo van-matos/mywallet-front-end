@@ -7,6 +7,8 @@ import GlobalStyle from "../assets/styles/globalStyles";
 import LoginPage from "./LoginPage";
 import SignupPage from "./SignupPage";
 import BalancePage from "./BalancePage";
+import IncomePage from "./IncomePage";
+import ExpenditurePage from "./ExpenditurePage";
 
 import UserContext from "../context/UserContext";
 
@@ -21,6 +23,8 @@ function App () {
                     <Route path="/" element = {<LoginPage />} />
                     <Route path ="/signup" element = {<SignupPage />} />
                     <Route path="/balance" element = {<BalancePage />} />
+                    <Route path="/income" element = {<IncomePage />} />
+                    <Route path="/expenditure" element = {<ExpenditurePage />} />
                 </Routes>
             </BrowserRouter>
         </UserContext.Provider>
