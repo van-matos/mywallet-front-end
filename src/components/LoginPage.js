@@ -18,7 +18,7 @@ function LoginPage() {
             password
         };
 
-        const promise = axios.post("http://localhost:5000/login", user);
+        const promise = axios.post("https://mywallet-backend-vm.herokuapp.com/login", user);
         promise.then(response => toBalance(response.data));
         promise.catch(failure);
     }
