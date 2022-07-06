@@ -29,7 +29,7 @@ function IncomePage() {
             type: "income"
         };
 
-        const promise = axios.post("http://localhost:5000/income", entry, config)
+        const promise = axios.post("https://back-mywallet-vm.herokuapp.com/income", entry, config)
         promise.then(toBalance);
         promise.catch((error) => alert(error.response.statusText));
     }
@@ -37,8 +37,8 @@ function IncomePage() {
     function toBalance() {
         alert("Entrada adicionada com sucesso.")
         navigate("/balance");
-    }
-
+        }
+    
     return (
         <Container>
             <h2>Nova entrada</h2>

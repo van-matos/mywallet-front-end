@@ -7,7 +7,7 @@ import UserContext from "../context/UserContext";
 
 function ExpenditurePage() {
     const { user } = useContext(UserContext);
-    
+
     const [amount, setAmount] = useState("");
     const [description, setDescription] = useState("");
     const navigate = useNavigate;
@@ -29,7 +29,7 @@ function ExpenditurePage() {
             type: "expenditure"
         };
 
-        const promise = axios.post("http://localhost:5000/expenditure", entry, config)
+        const promise = axios.post("https://back-mywallet-vm.herokuapp.com/expenditure", entry, config)
         promise.then(toBalance);
         promise.catch((error) => alert(error.response.statusText));
     }
@@ -37,8 +37,8 @@ function ExpenditurePage() {
     function toBalance() {
         alert("Saída adicionada com sucesso.")
         navigate("/balance");
-    }
-
+        }
+    
     return (
         <Container>
             <h2>Nova saída</h2>

@@ -20,8 +20,8 @@ function BalancePage() {
                 Authorization: `Bearer ${token}`
             }
         };
-        const promise = axios.get('http://localhost:5000/balance', config);
-        promise.then((response) => setTransactions(response.data))
+        const promise = axios.get("https://back-mywallet-vm.herokuapp.com/balance", config);
+        promise.then((response) => setTransactions(response.data));
     })
 
     function SignOut() {
@@ -31,7 +31,7 @@ function BalancePage() {
             }
         };
 
-        const promise = axios.get("http://localhost:5000/signout", config);
+        const promise = axios.get("https://back-mywallet-vm.herokuapp.com/signout", config);
         promise.then(toLogin);
     }
 

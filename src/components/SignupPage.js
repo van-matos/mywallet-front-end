@@ -26,7 +26,7 @@ function SignupPage() {
             password
         };
 
-        const promise = axios.post('http://localhost:5000/signup', signUp);
+        const promise = axios.post("https://back-mywallet-vm.herokuapp.com/signup", signUp);
         promise.then(toLogin);
         promise.catch(failure);
 
@@ -38,7 +38,6 @@ function SignupPage() {
         function failure() {
             alert("Erro! Dados inválidos.");
         }
-
     }
 
     return (

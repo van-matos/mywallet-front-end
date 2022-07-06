@@ -18,7 +18,7 @@ function LoginPage() {
             password
         };
 
-        const promise = axios.post("http://localhost:5000/login", user);
+        const promise = axios.post("https://back-mywallet-vm.herokuapp.com/login", user);
         promise.then(response => toBalance(response.data));
         promise.catch(failure);
     }
@@ -29,10 +29,10 @@ function LoginPage() {
     }
 
     function failure() {
-        setEmail("");
-        setPassword("");
-        alert("Usuário e/ou senha inválidos");
-    }
+            setEmail("");
+            setPassword("");
+            alert("Usuário e/ou senha inválidos");
+        }
 
     return (
         <Container>
